@@ -43,6 +43,7 @@ A continuación, los pasos para inicializar el sistema en cada entorno:
    python3 vision.py
 ```
    *El stream de video estará disponible en `http://localhost:5000/video_feed`.*
+   
 3. **Iniciar el Control del Niryo One:**
    Abre otra terminal y ejecuta la máquina de estados del robot:
 ```bash
