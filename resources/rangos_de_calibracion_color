@@ -1,0 +1,18 @@
+RANGOS POR DEFECTO (ROJO)
+    # Rango 1: Rojos bajos (0 a 10)
+    lower_red1 = np.array([0, 120, 70])
+    upper_red1 = np.array([10, 255, 255])
+    
+    # Rango 2: Rojos altos (170 a 179)
+    lower_red2 = np.array([170, 120, 70])
+    upper_red2 = np.array([179, 255, 255])
+
+RANGOS CALIBRADOS (ROJO)
+    # Rango 1: Rojos bajos (0 a 10)
+    lower_red1 = np.array([0, 100, 100])
+    upper_red1 = np.array([6, 255, 255])
+    
+    # Rango 2: Rojos altos (170 a 179)
+    lower_red2 = np.array([170, 110, 45])
+    upper_red2 = np.array([179, 255, 255])
+

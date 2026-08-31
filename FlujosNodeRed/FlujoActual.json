@@ -1,0 +1,153 @@
+[
+    {
+        "id": "6ac9da1f73f356a0",
+        "type": "ui-gauge",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "group": "47e02302139ebd88",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "PITCH",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-180",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-180",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47e02302139ebd88",
+        "type": "ui-group",
+        "name": "Ángulos del Objeto",
+        "page": "fa0efc4b68582a42",
+        "width": 9,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fa0efc4b68582a42",
+        "type": "ui-page",
+        "name": "HMI Control Robótico",
+        "ui": "b6606cf4ac20155c",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "5adfadbfae5c9775",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b6606cf4ac20155c",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "5adfadbfae5c9775",
+        "type": "ui-theme",
+        "name": "Dark",
+        "colors": {
+            "surface": "#1e1e1e",
+            "primary": "#00bcd4",
+            "bgPage": "#121212",
+            "groupBg": "#242424",
+            "groupOutline": "#333333"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "84ba9cda9e8dcf3a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]

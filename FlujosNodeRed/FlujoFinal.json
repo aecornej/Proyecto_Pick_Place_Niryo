@@ -1,0 +1,1783 @@
+[
+    {
+        "id": "190df1280c0874f3",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "665ee56185412e2c",
+        "type": "mqtt-broker",
+        "name": "Localhost",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b6606cf4ac20155c",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "a8f4771f50f5d05e",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "47710fcf715fb94f",
+        "type": "ui-theme",
+        "z": "190df1280c0874f3",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "5adfadbfae5c9775",
+        "type": "ui-theme",
+        "name": "Dark",
+        "colors": {
+            "surface": "#1e1e1e",
+            "primary": "#00bcd4",
+            "bgPage": "#121212",
+            "groupBg": "#242424",
+            "groupOutline": "#333333"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "fa0efc4b68582a42",
+        "type": "ui-page",
+        "name": "HMI Control Robótico",
+        "ui": "b6606cf4ac20155c",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "5adfadbfae5c9775",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0dd5e33bc951ce11",
+        "type": "ui-group",
+        "name": "Consola de Operación",
+        "page": "fa0efc4b68582a42",
+        "width": 2,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cb4d1f958127f713",
+        "type": "ui-group",
+        "name": "Vista de Cámara",
+        "page": "fa0efc4b68582a42",
+        "width": 10,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9b42a1bfcffe01b3",
+        "type": "ui-group",
+        "name": "Alertas del Sistema",
+        "page": "fa0efc4b68582a42",
+        "width": "24",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f785db05ccb5b67a",
+        "type": "ui-group",
+        "name": "Coordenadas",
+        "page": "fa0efc4b68582a42",
+        "width": 3,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "47e02302139ebd88",
+        "type": "ui-group",
+        "name": "Ángulos del Objeto",
+        "page": "fa0efc4b68582a42",
+        "width": 9,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "63f8237d9e0ff2e3",
+        "type": "debug",
+        "z": "190df1280c0874f3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ab1f4587feb4588a",
+        "type": "mqtt in",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/robot/coordenadas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "665ee56185412e2c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "502ab6c00a75f8fa"
+            ]
+        ]
+    },
+    {
+        "id": "502ab6c00a75f8fa",
+        "type": "function",
+        "z": "190df1280c0874f3",
+        "name": "function 1",
+        "func": "// 1. Python envía un texto con comas (ej. \"0.150,-0.200,0.180,1.500,-1.500,0.000\")\nlet datos = msg.payload.split(\",\");\n\n// Verificamos que lleguen exactamente los 6 datos esperados\nif (datos.length === 6) {\n    let msgTextoCompleto = { payload: msg.payload }; // Salida 1: Texto sin procesar\n    let msgX = { payload: datos[0] };                // Salida 2: X\n    let msgY = { payload: datos[1] };                // Salida 3: Y\n    let msgZ = { payload: datos[2] };                // Salida 4: Z\n    let msgRoll = { payload: datos[3] };             // Salida 5: Roll\n    let msgPitch = { payload: datos[4] };            // Salida 6: Pitch\n    let msgYaw = { payload: datos[5] };              // Salida 7: Yaw\n\n    // Enviamos los mensajes por los 7 puertos\n    return [msgTextoCompleto, msgX, msgY, msgZ, msgRoll, msgPitch, msgYaw];\n}\n\n// Si llega un error o un texto incompleto, no actualiza los relojes\nreturn [msg, null, null, null, null, null, null];",
+        "outputs": 7,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 140,
+        "wires": [
+            [],
+            [
+                "7353ac9464a4a1fe"
+            ],
+            [
+                "6a38eb6d10a40ba2"
+            ],
+            [
+                "1149436c91a95094"
+            ],
+            [
+                "0783c72433fe87f6"
+            ],
+            [
+                "6ac9da1f73f356a0"
+            ],
+            [
+                "2728198ebd815aaf"
+            ]
+        ]
+    },
+    {
+        "id": "52a843dd1451491c",
+        "type": "amazon-echo-device",
+        "z": "190df1280c0874f3",
+        "name": "robot",
+        "topic": "",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "63f8237d9e0ff2e3"
+            ]
+        ]
+    },
+    {
+        "id": "d08f87e14d5301b8",
+        "type": "amazon-echo-hub",
+        "z": "190df1280c0874f3",
+        "port": "80",
+        "processinput": 0,
+        "discovery": true,
+        "x": 210,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92d7229173912c70",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "START",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "adc242179aedc611"
+            ]
+        ]
+    },
+    {
+        "id": "bcd5a1decb783d29",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "PARO DE EMERGENCIA",
+        "order": 2,
+        "width": 0,
+        "height": 3,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mdi-alert-octagon",
+        "iconPosition": "left",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "adc242179aedc611"
+            ]
+        ]
+    },
+    {
+        "id": "21fe5d173e0a2c2d",
+        "type": "ui-template",
+        "z": "190df1280c0874f3",
+        "group": "cb4d1f958127f713",
+        "page": "",
+        "ui": "",
+        "name": "Vista de Cámara",
+        "order": 1,
+        "width": 0,
+        "height": 9,
+        "head": "",
+        "format": "<template>\n    <div style=\"display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; border-radius: 6px; overflow: hidden; background: transparent;\">\n        <img \n            src=\"http://localhost:5000/video_feed\" \n            style=\"width: 100%; height: 100%; object-fit: contain; display: block;\"\n            alt=\"Conectando cámara...\"\n        >\n    </div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf652719e7d3bb1d",
+        "type": "inject",
+        "z": "190df1280c0874f3",
+        "name": "Simulador de Error",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "La cámara no detecta el bloque",
+        "payloadType": "str",
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "1e0a42e00a182023"
+            ]
+        ]
+    },
+    {
+        "id": "7353ac9464a4a1fe",
+        "type": "ui-text",
+        "z": "190df1280c0874f3",
+        "group": "f785db05ccb5b67a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "X (cm):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 640,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6a38eb6d10a40ba2",
+        "type": "ui-text",
+        "z": "190df1280c0874f3",
+        "group": "f785db05ccb5b67a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Y (cm):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1149436c91a95094",
+        "type": "ui-text",
+        "z": "190df1280c0874f3",
+        "group": "f785db05ccb5b67a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Z (cm):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 640,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0783c72433fe87f6",
+        "type": "ui-gauge",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "group": "47e02302139ebd88",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "ROLL",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-180",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-180",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2728198ebd815aaf",
+        "type": "ui-gauge",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "group": "47e02302139ebd88",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "YAW",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-180",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-180",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ac9da1f73f356a0",
+        "type": "ui-gauge",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "group": "47e02302139ebd88",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "PITCH",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-180",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-180",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5daf0e984b253808",
+        "type": "inject",
+        "z": "190df1280c0874f3",
+        "name": "Restablecer Sistema",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "1e0a42e00a182023"
+            ]
+        ]
+    },
+    {
+        "id": "adc242179aedc611",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/iniciar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "53c0cb63f3de37bd",
+        "type": "mqtt in",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/hmi/estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "665ee56185412e2c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 740,
+        "y": 500,
+        "wires": [
+            [
+                "1e0a42e00a182023"
+            ]
+        ]
+    },
+    {
+        "id": "b2cb50e66120c94d",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "Modo Automático",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "auto",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "c51e92644db3dd48"
+            ]
+        ]
+    },
+    {
+        "id": "cd1b945f671849c8",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "Modo Manual",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "manual",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "08411f6829eea234"
+            ]
+        ]
+    },
+    {
+        "id": "199fb83dad8cb850",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "Punto 1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Pick_1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 640,
+        "wires": [
+            [
+                "47d0c9e5d0bbe555"
+            ]
+        ]
+    },
+    {
+        "id": "c7e541831f52b5df",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "Punto 2",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Pick_2",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "9c34477748b993e7"
+            ]
+        ]
+    },
+    {
+        "id": "9919509c15c1a7f8",
+        "type": "ui-button",
+        "z": "190df1280c0874f3",
+        "group": "0dd5e33bc951ce11",
+        "name": "",
+        "label": "Punto 3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "Pick_3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 760,
+        "wires": [
+            [
+                "ed7b6682e7dde4c3"
+            ]
+        ]
+    },
+    {
+        "id": "c51e92644db3dd48",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "08411f6829eea234",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "47d0c9e5d0bbe555",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9c34477748b993e7",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ed7b6682e7dde4c3",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 390,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "bd533ef5b28e42e9",
+        "type": "amazon-echo-device",
+        "z": "190df1280c0874f3",
+        "name": "Modo Automático",
+        "topic": "",
+        "x": 930,
+        "y": 40,
+        "wires": [
+            [
+                "0f511513224ff726",
+                "d46dd8945b61f0f2"
+            ]
+        ]
+    },
+    {
+        "id": "37a4ee349b9b5b14",
+        "type": "amazon-echo-device",
+        "z": "190df1280c0874f3",
+        "name": "Punto Uno",
+        "topic": "",
+        "x": 950,
+        "y": 160,
+        "wires": [
+            [
+                "c67432beecf4fb43",
+                "6a524e942d2b0875",
+                "973a04f6bb0c977e"
+            ]
+        ]
+    },
+    {
+        "id": "19ec7f516fa76a04",
+        "type": "amazon-echo-device",
+        "z": "190df1280c0874f3",
+        "name": "Punto Dos",
+        "topic": "",
+        "x": 950,
+        "y": 300,
+        "wires": [
+            [
+                "55b38a4b96b8efb8",
+                "9f971db120f83287",
+                "217c4aa16af97889"
+            ]
+        ]
+    },
+    {
+        "id": "50db4ef87920ef3d",
+        "type": "amazon-echo-device",
+        "z": "190df1280c0874f3",
+        "name": "Punto Tres",
+        "topic": "",
+        "x": 950,
+        "y": 440,
+        "wires": [
+            [
+                "73d8393d2aa6b1ce",
+                "6777466f430c98f9",
+                "bc8c365b072f92b1"
+            ]
+        ]
+    },
+    {
+        "id": "0f511513224ff726",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Auto",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "auto",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 20,
+        "wires": [
+            [
+                "2f411316f5b2569d"
+            ]
+        ]
+    },
+    {
+        "id": "c67432beecf4fb43",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Manual",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "manual",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 120,
+        "wires": [
+            [
+                "f1dc567ce1410467"
+            ]
+        ]
+    },
+    {
+        "id": "6a524e942d2b0875",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Pick 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pick_1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 160,
+        "wires": [
+            [
+                "69e46a6ca8ea3cf0"
+            ]
+        ]
+    },
+    {
+        "id": "55b38a4b96b8efb8",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Manual",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "manual",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 260,
+        "wires": [
+            [
+                "88464ef7ff1f2733"
+            ]
+        ]
+    },
+    {
+        "id": "9f971db120f83287",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Pick 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pick_2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            [
+                "edb2f20253948a69"
+            ]
+        ]
+    },
+    {
+        "id": "73d8393d2aa6b1ce",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Manual",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "manual",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 400,
+        "wires": [
+            [
+                "4280e97c5c029bf6"
+            ]
+        ]
+    },
+    {
+        "id": "c78c96a9419052e0",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 480,
+        "wires": [
+            [
+                "8746dd4246e81378"
+            ]
+        ]
+    },
+    {
+        "id": "6777466f430c98f9",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Pick 3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pick_3",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            [
+                "b32bfa09395210da"
+            ]
+        ]
+    },
+    {
+        "id": "f1dc567ce1410467",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "88464ef7ff1f2733",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4280e97c5c029bf6",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2f411316f5b2569d",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/modo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "69e46a6ca8ea3cf0",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "edb2f20253948a69",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b32bfa09395210da",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/punto",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1310,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8746dd4246e81378",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/iniciar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1480,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "bc8c365b072f92b1",
+        "type": "delay",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 480,
+        "wires": [
+            [
+                "c78c96a9419052e0"
+            ]
+        ]
+    },
+    {
+        "id": "830b017b204827aa",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 340,
+        "wires": [
+            [
+                "0616a74d6da5ee50"
+            ]
+        ]
+    },
+    {
+        "id": "0616a74d6da5ee50",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/iniciar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1480,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "217c4aa16af97889",
+        "type": "delay",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 340,
+        "wires": [
+            [
+                "830b017b204827aa"
+            ]
+        ]
+    },
+    {
+        "id": "f3c9b466a9b6df48",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 200,
+        "wires": [
+            [
+                "cb7c546a46885a13"
+            ]
+        ]
+    },
+    {
+        "id": "cb7c546a46885a13",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/iniciar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1480,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "973a04f6bb0c977e",
+        "type": "delay",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 200,
+        "wires": [
+            [
+                "f3c9b466a9b6df48"
+            ]
+        ]
+    },
+    {
+        "id": "54aac8c594baa545",
+        "type": "inject",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "adc242179aedc611"
+            ]
+        ]
+    },
+    {
+        "id": "3cc5ac0d9a559547",
+        "type": "change",
+        "z": "190df1280c0874f3",
+        "name": "Start",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 60,
+        "wires": [
+            [
+                "d8e5b92db7e8661a"
+            ]
+        ]
+    },
+    {
+        "id": "d8e5b92db7e8661a",
+        "type": "mqtt out",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "topic": "niryo/control/iniciar",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "665ee56185412e2c",
+        "x": 1480,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d46dd8945b61f0f2",
+        "type": "delay",
+        "z": "190df1280c0874f3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 60,
+        "wires": [
+            [
+                "3cc5ac0d9a559547"
+            ]
+        ]
+    },
+    {
+        "id": "1e0a42e00a182023",
+        "type": "function",
+        "z": "190df1280c0874f3",
+        "name": "Formato y Filtro",
+        "func": "let emergencia = context.get('emergencia') || false;\nlet texto = msg.payload;\n\n// 1. Si detecta Emergencia, activa el bloqueo y añade el ícono\nif (texto.includes(\"Paro de Emergencia\")) {\n    context.set('emergencia', true);\n    msg.payload = \"🚨 \" + texto;\n    return msg;\n}\n\n// 2. Si hay START, quita el bloqueo\nif (texto.includes(\"[START]\")) {\n    context.set('emergencia', false);\n    emergencia = false;\n}\n\n// 3. Si está bloqueado por emergencia, destruye los demás mensajes\nif (emergencia) {\n    return null; \n}\n\n// 4. Si es normal, deja pasar el texto tal cual\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 560,
+        "wires": [
+            [
+                "27ed842eed74df30"
+            ]
+        ]
+    },
+    {
+        "id": "27ed842eed74df30",
+        "type": "ui-template",
+        "z": "190df1280c0874f3",
+        "group": "9b42a1bfcffe01b3",
+        "page": "",
+        "ui": "",
+        "name": "Alertas del Sistema",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"font-family: monospace; font-size: 15px; padding: 12px; border-radius: 4px; transition: all 0.3s ease;\"\n     ng-style=\"{\n        'color': (msg.payload || '').includes('🚨') ? '#ff4d4d' : '#00f2fe',\n        'border-left': (msg.payload || '').includes('🚨') ? '6px solid #ff4d4d' : '6px solid #00f2fe',\n        'background-color': (msg.payload || '').includes('🚨') ? 'rgba(255, 77, 77, 0.15)' : 'rgba(0, 242, 254, 0.05)',\n        'font-weight': (msg.payload || '').includes('🚨') ? 'bold' : 'normal'\n     }\">\n    {{msg.payload || 'Esperando estado del sistema...'}}\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1150,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ec6c23a8760f675",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-contrib-amazon-echo": "0.1.18"
+        }
+    }
+]

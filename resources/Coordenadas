@@ -1,0 +1,111 @@
+pick1
+Joint 1 : -1.520
+Joint 2 : -0.616
+Joint 3 : -0.259
+Joint 4 : 0.045
+Joint 5 : -0.713
+Joint 6 : 1.851
+Pose x : 0.015
+Pose y : -0.280
+Pose z : 0.180
+Roll : -2.303
+Pitch : 1.537
+Yaw : 0.575
+
+pick2
+Joint 1 : -0.787
+Joint 2 : -0.474
+Joint 3 : -0.523
+Joint 4 : 0.079
+Joint 5 : -0.557
+Joint 6 : 2.506
+Pose x : 0.168
+Pose y : -0.166
+Pose z : 0.180
+Roll : -2.556
+Pitch : 1.525
+Yaw : 0.368
+
+pick3
+Joint 1 : -2.189
+Joint 2 : -0.545
+Joint 3 : -0.415
+Joint 4 : 0.077
+Joint 5 : -0.629
+Joint 6 : 1.191
+Pose x : -0.146
+Pose y : -0.208
+Pose z : 0.180
+Roll : -3.111
+Pitch : 1.523
+Yaw : -0.270
+
+Place
+Joint 1 : 0.214
+Joint 2 : -0.839
+Joint 3 : 0.150
+Joint 4 : 0.065
+Joint 5 : -0.873
+Joint 6 : 0.435
+Pose x : 0.333
+Pose y : 0.074
+Pose z : 0.180
+Roll : 1.863
+Pitch : 1.522
+Yaw : 1.602
+
+aproxPlace
+Joint 1 : 0.206
+Joint 2 : -0.638
+Joint 3 : 0.647
+Joint 4 : 0.066
+Joint 5 : -1.537
+Joint 6 : 0.445
+Pose x : 0.334
+Pose y : 0.072
+Pose z : 0.360
+Roll : 1.444
+Pitch : 1.492
+Yaw : 1.205
+
+aproxPick1
+Joint 1 : -1.520
+Joint 2 : -0.324
+Joint 3 : 0.356
+Joint 4 : 0.063
+Joint 5 : -1.582
+Joint 6 : 1.851
+Pose x : 0.016
+Pose y : -0.282
+Pose z : 0.395
+Roll : 3.106
+Pitch : 1.504
+Yaw : -0.264
+
+aproxPick2
+Joint 1 : -0.782
+Joint 2 : -0.091
+Joint 3 : 0.080
+Joint 4 : 0.068
+Joint 5 : -1.447
+Joint 6 : 2.526
+Pose x : 0.170
+Pose y : -0.167
+Pose z : 0.396
+Roll : 3.067
+Pitch : 1.439
+Yaw : -0.245
+
+aproxPick3
+Joint 1 : -2.191
+Joint 2 : -0.190
+Joint 3 : 0.238
+Joint 4 : 0.066
+Joint 5 : -1.609
+Joint 6 : 1.222
+Pose x : -0.146
+Pose y : -0.208
+Pose z : 0.406
+Roll : 2.656
+Pitch : 1.504
+Yaw : -0.754
