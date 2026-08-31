@@ -16,32 +16,63 @@ Este repositorio contiene el código fuente y las configuraciones para operar un
 
 Para la ejecución del control robótico y la visión en el equipo principal (Linux/Ubuntu), se requiere un entorno de Python con:
 
-"ini_bash"
+```bash
 pip install pyniryo paho-mqtt opencv-python flask numpy
-"end_bash"
+```
 
 **Nota sobre Node-RED e integración con Alexa:**
 Debido a las restricciones de los portales cautivos en redes educativas, el módulo de Node-RED encargado de emular el dispositivo para Amazon Alexa (nodos `amazon-echo-device`) está diseñado para ejecutarse en una **laptop con Windows** conectada a un punto de acceso sin restricciones, comunicándose remotamente con el broker MQTT.
 
 ## 🚀 Puesta en Marcha
 
-1.  **Iniciar Broker MQTT:**
-    Asegúrate de tener Mosquitto ejecutándose en la máquina host que actuará como servidor.
-2.  **Lanzar el Servidor de Visión:**
-    Abre una terminal, activa tu entorno virtual y ejecuta:
-    "ini_bash"
-    cd scripts
-    python vision.py
-    "end_bash"
-    *El stream de video estará disponible en el puerto 5000 para ser consumido por el HMI.*
-3.  **Iniciar el Control del Niryo One:**
-    Con el robot encendido e IP configurada (`192.168.0.100`), ejecuta:
-    "ini_bash"
-    python Robotcito.py
-    "end_bash"
-    *El brazo realizará su calibración inicial y pasará a estado de espera (Home).*
-4.  **Desplegar HMI:**
-    En la instancia de Node-RED (Windows), importa el archivo `FlujoActual.json` ubicado en la carpeta `/FlujosNodeRed`, ajusta la IP del broker MQTT si es necesario, y haz clic en *Deploy*.
+El proyecto es de naturaleza multiplataforma. Siempre que se cuente con las dependencias instaladas (Python, Mosquitto MQTT y Node-RED), los nodos de visión, el control del robot y el HMI pueden ejecutarse indistintamente en Linux o Windows.
+
+A continuación, los pasos para inicializar el sistema en cada entorno:
+
+### 🐧 Opción A: Despliegue en Ubuntu / Linux
+
+1. **Iniciar Broker MQTT:**
+   Asegúrate de que el servicio de Mosquitto esté corriendo en segundo plano:
+```bash
+   sudo systemctl start mosquitto
+```
+2. **Lanzar el Servidor de Visión:**
+   Abre una terminal, ubícate en la carpeta del proyecto y ejecuta el script de visión (si usas un entorno virtual, actívalo primero):
+```bash
+   cd scripts
+   python3 vision.py
+```
+   *El stream de video estará disponible en `http://localhost:5000/video_feed`.*
+3. **Iniciar el Control del Niryo One:**
+   Abre otra terminal y ejecuta la máquina de estados del robot:
+```bash
+   cd scripts
+   python3 Robotcito.py
+```
+4. **Desplegar HMI en Node-RED:**
+   En una nueva terminal, inicia el servidor de Node-RED ejecutando el comando `node-red`. Abre el navegador en `http://localhost:1880`, importa el archivo `FlujoActual.json` ubicado en `/FlujosNodeRed` y haz clic en *Deploy*.
+
+---
+
+### 🪟 Opción B: Despliegue en Windows
+*(Recomendado si se desea habilitar la integración nativa con Amazon Alexa evadiendo restricciones de red mediante un hotspot local)*
+
+1. **Iniciar Broker MQTT:**
+   Abre el menú de inicio, busca "Servicios" (Services), localiza `Mosquitto Broker` y asegúrate de que su estado sea "En ejecución". (Alternativamente, ejecútalo desde su carpeta de instalación en CMD).
+2. **Lanzar Scripts de Python (Visión y Robot):**
+   Abre la consola Símbolo del Sistema (CMD) o PowerShell. Navega hasta la carpeta del proyecto e inicia los scripts en ventanas separadas:
+```bash
+   cd ruta\hacia\Proyecto_Niryo\scripts
+   python vision.py
+```
+   
+   En otra ventana de CMD:
+```bash
+   cd ruta\hacia\Proyecto_Niryo\scripts
+   python Robotcito.py
+```
+3. **Desplegar HMI y Nodos de Alexa:**
+   Abre CMD y ejecuta el comando `node-red`. Luego, ingresa a `http://localhost:1880` desde tu navegador. Importa el archivo `FlujoActual.json` (o cualquier archivo de respaldo en `/FlujosNodeRed`), configura la IP del broker MQTT y presiona *Deploy*. El nodo `amazon-echo-device` quedará visible en la red local para ser descubierto por tu dispositivo Echo Show.
 
 ## ⚙️ Modos de Operación
 
